@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Audio Player</title>
+  <title>Styled Audio Player</title>
   <style>
     body {
-      background-color: #f9f9f6; /* off-white background for the page */
+      background-color: #f9f9f6;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -12,20 +12,28 @@
       margin: 0;
     }
 
-    .audio-wrapper {
-      background-color: #2e7d32; /* green background for the audio block */
-      padding: 20px;
-      border-radius: 0px; /* rectangular shape */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .audio-container {
+      background-color: #2e7d32; /* green background */
+      padding: 30px;
+      border-radius: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .audio-container h2 {
+      color: #fff;
+      font-family: sans-serif;
+      margin-bottom: 20px;
+      font-size: 18px;
     }
 
     audio {
-      width: 300px;
-      background-color: #2e7d32; /* ensures green background on supported browsers */
+      width: 100%;
     }
 
     audio::-webkit-media-controls-enclosure {
-      border-radius: 0px;
+      border-radius: 0;
     }
 
     audio::-webkit-media-controls-download-button {
@@ -34,11 +42,7 @@
   </style>
 </head>
 <body>
-  <div class="audio-wrapper">
+  <div class="audio-container">
+    <h2>Now Playing</h2>
     <audio controls controlsList="nodownload">
       <source src="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/8f09e6b6-e310-4681-9c87-f3a5886676ae/Audio-1-The-Messy-Middle.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</body>
-</html>
