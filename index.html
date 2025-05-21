@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio Player</title>
+  <style>
+    audio {
+      width: 300px;
+    }
+
+    audio::-webkit-media-controls-enclosure {
+      overflow: hidden;
+    }
+
+    audio::-webkit-media-controls-download-button {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <audio controls controlsList="nodownload">
+    <source src="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/8f09e6b6-e310-4681-9c87-f3a5886676ae/Audio-1-The-Messy-Middle.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
